@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo de entradas, reservados y extras de Night Cart." />
+  <title>Night Cart | Productos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="productos">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1>Night Cart</h1>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="active">Productos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section>
+      <h2>Productos por sala y evento</h2>
+      <p>Todo el catálogo de la agenda semanal con entradas, reservados y servicios extra.</p>
+    </section>
+
+    <section class="card table-wrap">
+      <h3>Catálogo completo</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Sala / Evento</th>
+            <th>Precio</th>
+            <th>Añadir</th>
+          </tr>
+        </thead>
+        <tbody id="products-table-body"></tbody>
+      </table>
+    </section>
+
+    <section class="product-grid" id="products-grid"></section>
+
+    <p id="cart-feedback" class="cart-feedback" aria-live="polite"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Night Cart · Catálogo de entradas y reservas</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
