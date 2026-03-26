@@ -76,8 +76,6 @@ Ejemplos de archivos usados por el proyecto:
 - `assets/media/video-correcaminos.mp4`
 - `assets/media/audio-miniboom.ogg`
 
-Si algún archivo no existe aún, basta con crearlo en esa ruta con ese nombre.
-
 ## Limitaciones actuales
 
 - No hay backend ni base de datos.
@@ -91,24 +89,8 @@ Al ser una web estática:
 1. Abre `index.html` en el navegador.
 2. Navega por `productos.html`, `carrito.html` y `contacto.html`.
 
-Opcional recomendado: usar Live Server en VS Code para probar con recarga automática.
-
 ## Despliegue en GitHub Pages
 
-URL esperada:
+URL de despliegue:
 
-`https://<TU_USUARIO_GITHUB>.github.io/p4/`
-
-Pasos:
-
-1. Subir cambios a la rama `main`.
-2. Ir a `Settings > Pages` del repositorio.
-3. Elegir `Deploy from a branch`.
-4. Seleccionar rama `main` y carpeta `/ (root)`.
-5. Guardar y esperar publicación.
-
-## Entrega
-
-Enlace de repositorio para entrega:
-
-`https://github.com/<TU_USUARIO_GITHUB>/p4`
+`https://Vicente-Perez-Garbin.github.io/p4/`
