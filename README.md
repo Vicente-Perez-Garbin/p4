@@ -1,6 +1,6 @@
 # p4
 
-Práctica 4 de PAT: web de ocio nocturno con catálogo y carrito en cliente usando HTML, CSS y JavaScript.
+Práctica 4 de PAT: web de ocio nocturno en versión estática usando solo HTML y CSS.
 
 ## Descripción general
 
@@ -8,46 +8,28 @@ Este proyecto implementa una web temática de eventos nocturnos con 4 páginas c
 
 - Inicio con agenda semanal y contenido multimedia.
 - Catálogo de productos/eventos.
-- Carrito dinámico con persistencia en navegador.
-- Contacto con formulario y selección opcional de producto.
+- Carrito de ejemplo con resumen estático.
+- Contacto con formulario y selector opcional de producto.
 
-Toda la lógica se ejecuta en frontend, sin backend.
+No hay lógica de frontend ni backend: toda la web es contenido estático.
 
 ## Estructura del proyecto
 
 - `index.html`: portada y agenda semanal.
-- `productos.html`: tabla + tarjetas del catálogo.
-- `carrito.html`: resumen de compra, cupón y totales.
-- `contacto.html`: formulario de contacto.
+- `productos.html`: tabla y tarjetas del catálogo en HTML fijo.
+- `carrito.html`: resumen de compra estático para maqueta.
+- `contacto.html`: formulario de contacto con selector de producto.
 - `styles.css`: estilos globales y responsive.
-- `script.js`: datos del catálogo y lógica dinámica.
 - `assets/media/`: carpeta de imágenes, vídeo y audio.
-
-## Qué hace JavaScript en este proyecto
-
-El archivo `script.js` centraliza tanto los datos como el comportamiento:
-
-- Define el catálogo completo (`PRODUCTS`) con id, nombre, sala/evento, precio, descripción y ruta de imagen.
-- Genera dinámicamente los productos en `productos.html` (tabla y cards).
-- Permite añadir productos al carrito.
-- Gestiona el carrito con `localStorage` (altas, eliminación por unidad y persistencia tras recargar).
-- Calcula subtotal, descuento y total en `carrito.html`.
-- Aplica cupón de descuento (50%) con validación case-insensitive.
-- Guarda preferencia de cupón en `localStorage`.
-- En `contacto.html`, rellena el desplegable de productos desde `PRODUCTS` y habilita/deshabilita el select según checkbox.
-- Inicializa solo la lógica necesaria según `data-page`.
 
 ## Funcionalidades implementadas
 
 - Navegación completa entre las 4 páginas.
 - Diseño coherente, responsive y tipografía moderna.
-- Catálogo dinámico de 7 productos/eventos.
-- Botones de "Añadir" en tabla y tarjetas.
-- Carrito dinámico con estado persistente.
-- Eliminación de productos desde el carrito.
-- Sistema de cupón funcional (`AtilanoPonmeUn10`) con 50% de descuento.
+- Catálogo completo presentado en tabla y tarjetas.
+- Carrito maquetado con totales de ejemplo.
 - Sección promocional extra en carrito con imagen (`imagen-coche.jpeg`).
-- Formulario de contacto con selector condicional de producto.
+- Formulario de contacto con campos básicos y selección opcional de producto.
 
 ## Agenda y catálogo (estado actual)
 
@@ -79,7 +61,8 @@ Ejemplos de archivos usados por el proyecto:
 ## Limitaciones actuales
 
 - No hay backend ni base de datos.
-- El formulario de contacto no envía datos a servidor (solo comportamiento de UI).
+- El formulario de contacto no envía datos a servidor.
+- El carrito y descuentos no son interactivos en esta versión.
 - No hay autenticación ni pago real.
 
 ## Ejecución local
