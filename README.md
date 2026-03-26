@@ -73,8 +73,8 @@ Ejemplos de archivos usados por el proyecto:
 - `assets/media/imagen-barcelo.jpeg`
 - `assets/media/imagen-jowke.jpeg`
 - `assets/media/imagen-coche.jpeg`
-- `assets/media/anuncio-noche.mp4`
-- `assets/media/jingle-noche.ogg`
+- `assets/media/video-correcaminos.mp4`
+- `assets/media/audio-miniboom.ogg`
 
 Si algún archivo no existe aún, basta con crearlo en esa ruta con ese nombre.
 
