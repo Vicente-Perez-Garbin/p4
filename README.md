@@ -1,79 +1,69 @@
 # p4
 
-Práctica 4 de PAT: web de ocio nocturno en versión estática usando solo HTML y CSS.
+Práctica de página web estática de PAT (HTML + CSS), centrada en un carrito de compra de ocio y eventos.
 
-## Descripción general
+## Objetivo de la práctica
 
-Este proyecto implementa una web temática de eventos nocturnos con 4 páginas conectadas:
+Construir una web estática con:
 
-- Inicio con agenda semanal y contenido multimedia.
-- Catálogo de productos/eventos.
-- Carrito de ejemplo con resumen estático.
-- Contacto con formulario y selector opcional de producto.
-
-No hay lógica de frontend ni backend: toda la web es contenido estático.
+- 1 página principal + 3 páginas interiores interconectadas.
+- Uso correcto de etiquetas HTML vistas en clase.
+- Estilo visual personal, uniforme y responsive mediante CSS.
 
 ## Estructura del proyecto
 
-- `index.html`: portada y agenda semanal.
-- `productos.html`: tabla y tarjetas del catálogo en HTML fijo.
-- `carrito.html`: resumen de compra estático para maqueta.
-- `contacto.html`: formulario de contacto con selector de producto.
-- `styles.css`: estilos globales y responsive.
-- `assets/media/`: carpeta de imágenes, vídeo y audio.
+Ruta base del proyecto: `p4/`
 
-## Funcionalidades implementadas
+- `index.html`: portada, presentación del servicio, multimedia y agenda semanal.
+- `productos.html`: catálogo completo en tabla y tarjetas de producto.
+- `carrito.html`: resumen de carrito maquetado (estructura de compra y totales).
+- `contacto.html`: formulario web de contacto con selector de producto.
+- `styles.css`: estilos globales compartidos por todas las páginas y reglas responsive.
+- `assets/media/`: recursos multimedia (imágenes, vídeo y audio).
 
-- Navegación completa entre las 4 páginas.
-- Diseño coherente, responsive y tipografía moderna.
-- Catálogo completo presentado en tabla y tarjetas.
-- Carrito maquetado con totales de ejemplo.
-- Sección promocional extra en carrito con imagen (`imagen-coche.jpeg`).
-- Formulario de contacto con campos básicos y selección opcional de producto.
+## Qué incluye
 
-## Agenda y catálogo (estado actual)
+Elementos HTML requeridos:
 
-Eventos y productos ajustados al contenido actual:
+- Títulos: jerarquía con `h1`, `h2`, `h3`.
+- Párrafos: textos descriptivos en todas las páginas.
+- Tablas: agenda en `index.html` y catálogo en `productos.html`.
+- Multimedia: imagen, vídeo y audio en la portada.
+- Formularios web: formulario de contacto en `contacto.html` y cupón en `carrito.html`.
 
-- Lunes (Azúcar): salsa temática.
-- Martes (Maracas): macarena trajeados.
-- Miércoles (Coconut): batalla improvisada estilo FMS patrocinada por JD.
-- Jueves (Kharma): experiencia temática.
-- Viernes (CODE/Fabrik): mesa techno + kit bienestar.
-- Sábado (Barceló): reggaeton classics con reservado.
-- Domingo (Jowke): resaca pool party.
+Interconexión de páginas:
 
-## Recursos multimedia esperados
+- Menú de navegación común en las 4 páginas (`Inicio`, `Productos`, `Carrito`, `Contacto`).
 
-Ejemplos de archivos usados por el proyecto:
+CSS aplicado:
 
-- `assets/media/imagen-azucar.jpeg`
-- `assets/media/imagen-maracas.jpeg`
-- `assets/media/imagen-coconut.jpeg`
-- `assets/media/imagen-kharma.jpeg`
-- `assets/media/imagen-fabrik.jpeg`
-- `assets/media/imagen-barcelo.jpeg`
-- `assets/media/imagen-jowke.jpeg`
-- `assets/media/imagen-coche.jpeg`
-- `assets/media/video-correcaminos.mp4`
-- `assets/media/audio-miniboom.ogg`
+- Paleta de color unificada con variables CSS.
+- Componentes comunes (header, cards, botones, tablas, formularios).
+- Diseño responsive con media query para pantallas pequeñas.
 
-## Limitaciones actuales
+## Estado funcional de la práctica
 
-- No hay backend ni base de datos.
-- El formulario de contacto no envía datos a servidor.
-- El carrito y descuentos no son interactivos en esta versión.
-- No hay autenticación ni pago real.
+- Web completamente estática (sin backend).
+- Navegación interna completa.
+- Maquetación consistente entre páginas.
 
-## Ejecución local
+## Acabado y nivel de calidad
 
-Al ser una web estática:
+Además de los mínimos exigidos, el proyecto incorpora:
 
-1. Abre `index.html` en el navegador.
-2. Navega por `productos.html`, `carrito.html` y `contacto.html`.
+- Identidad visual coherente en toda la web.
+- Catálogo detallado con formato combinado (tabla + tarjetas).
+- Sección promocional y recursos multimedia integrados.
+- Estructura semántica clara y fácil de mantener.
 
-## Despliegue en GitHub Pages
+Este conjunto cubre tanto los requisitos base como los apartados de acabado, diseño limpio y enfoque responsive del enunciado.
 
-URL de despliegue:
+## Despliegue
+
+GitHub Pages:
 
 `https://Vicente-Perez-Garbin.github.io/p4/`
+
+Repositorio de entrega:
+
+`https://github.com/Vicente-Perez-Garbin/p4`
